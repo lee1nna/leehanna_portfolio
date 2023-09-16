@@ -49,7 +49,7 @@ const Project = () => {
             styles["npc-wrapper"]
           }`}
         >
-          {hoverNpc && <img className={styles.bulb} src="/bulb.png" alt="" />}
+          {hoverNpc && <img className={styles.bulb} src="https://lee1nna.github.io/leehanna_portfolio/bulb.png" alt="" />}
           {hoverNpc === false && (
             <div className={styles["click-me__txt"]}>Click Me !!</div>
           )}
@@ -67,7 +67,7 @@ const Project = () => {
                 npcRef.current.style.display = "none";
               }, 500);
             }}
-            src="/my-npc2.png"
+            src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
             alt=""
           />
           <div className={styles.name}>
@@ -79,7 +79,7 @@ const Project = () => {
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
-              <img src="/my-npc2.png" alt="" />
+              <img src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png" alt="" />
               <div className={styles.name}>
                 <span>FE 이한나</span>
               </div>
@@ -99,7 +99,7 @@ const Project = () => {
                           setSelectedProject(project.id);
                         }}
                       >
-                        <img className={styles.arrow} src="/arrow.png" alt="" />
+                        <img className={styles.arrow} src="https://lee1nna.github.io/leehanna_portfolio/arrow.png" alt="" />
                         {project.title}
                       </li>
                     );
@@ -120,7 +120,7 @@ const Project = () => {
                 setSelectedProject(null);
               }}
             >
-              <img src="/pixel-arrow.png" alt="" />
+              <img src="https://lee1nna.github.io/leehanna_portfolio/pixel-arrow.png" alt="" />
               <div>이전</div>
             </div>
           )}

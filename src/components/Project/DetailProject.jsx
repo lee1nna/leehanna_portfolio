@@ -11,7 +11,7 @@ const DetailProject = (props) => {
     <div>
       {props.projectId === 1 && (
         <div>
-          <img className={styles["project-img"]} src="/p_cctv.png" alt="" />
+          <img className={styles["project-img"]} src="https://lee1nna.github.io/leehanna_portfolio/p_cctv.png" alt="" />
           <div className={styles["project-info"]}>
             <div className={styles["project-title"]}>
               CCTV 관제 페이지

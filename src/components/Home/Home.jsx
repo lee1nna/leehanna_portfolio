@@ -98,7 +98,7 @@ const Home = () => {
             setSelectedThing("project");
           }}
           className={styles["project-icon"]}
-          src="project-removebg-preview.png"
+          src="https://lee1nna.github.io/leehanna_portfolio/project-removebg-preview.png"
           alt=""
         />
         <img
@@ -106,7 +106,7 @@ const Home = () => {
             setSelectedThing("skill");
           }}
           className={styles["skill-icon"]}
-          src="skill-removebg-preview.png"
+          src="https://lee1nna.github.io/leehanna_portfolio/skill-removebg-preview.png"
           alt=""
         />
         <img
@@ -114,7 +114,7 @@ const Home = () => {
             setSelectedThing("work");
           }}
           className={styles["work-icon"]}
-          src="work-removebg-preview.png"
+          src="https://lee1nna.github.io/leehanna_portfolio/work-removebg-preview.png"
           alt=""
         />
         <img
@@ -122,7 +122,7 @@ const Home = () => {
             setSelectedThing("contact");
           }}
           className={styles["contact-icon"]}
-          src="contact-removebg-preview.png"
+          src="https://lee1nna.github.io/leehanna_portfolio/contact-removebg-preview.png"
           alt=""
         />
       </div>

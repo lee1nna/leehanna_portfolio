@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'maple';
+    src: url('../public/font/Stylish-Regular.ttf');
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start {
+    align-items: start;
+    justify-content: center;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
+
+.mg-top-20 {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fs-20 {
+    font-size: 20px;
+}

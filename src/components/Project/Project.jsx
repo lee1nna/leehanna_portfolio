@@ -41,7 +41,6 @@ const Project = () => {
 
   return (
     <div id="project" className={styles.project}>
-      {/* <div className="title">Project</div> */}
       {
         <div
           ref={npcRef}
@@ -49,12 +48,18 @@ const Project = () => {
             styles["npc-wrapper"]
           }`}
         >
-          {hoverNpc && <img className={styles.bulb} src="https://lee1nna.github.io/leehanna_portfolio/bulb.png" alt="" />}
+          {hoverNpc && (
+            <img
+              className={styles.bulb}
+              src="https://lee1nna.github.io/leehanna_portfolio/bulb.png"
+              alt=""
+            />
+          )}
           {hoverNpc === false && (
             <div className={styles["click-me__txt"]}>Click Me !!</div>
           )}
           <img
-          className={styles.npc}
+            className={styles.npc}
             onMouseOver={() => {
               setHoverNpc(true);
             }}
@@ -79,7 +84,10 @@ const Project = () => {
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
-              <img src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png" alt="" />
+              <img
+                src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
+                alt=""
+              />
               <div className={styles.name}>
                 <span>FE 이한나</span>
               </div>
@@ -99,7 +107,11 @@ const Project = () => {
                           setSelectedProject(project.id);
                         }}
                       >
-                        <img className={styles.arrow} src="https://lee1nna.github.io/leehanna_portfolio/arrow.png" alt="" />
+                        <img
+                          className={styles.arrow}
+                          src="https://lee1nna.github.io/leehanna_portfolio/arrow.png"
+                          alt=""
+                        />
                         {project.title}
                       </li>
                     );
@@ -120,7 +132,10 @@ const Project = () => {
                 setSelectedProject(null);
               }}
             >
-              <img src="https://lee1nna.github.io/leehanna_portfolio/pixel-arrow.png" alt="" />
+              <img
+                src="https://lee1nna.github.io/leehanna_portfolio/pixel-arrow.png"
+                alt=""
+              />
               <div>이전</div>
             </div>
           )}

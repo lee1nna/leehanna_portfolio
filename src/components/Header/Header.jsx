@@ -3,7 +3,11 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <ul className={styles["header-ul"]}>
+      <div className={styles['header-title']}>
+      Leehanna Portfolio
+      </div>
+      <img src="maple-logo.png" alt="" />
+      {/* <ul className={styles["header-ul"]}>
         <a href="#home">
           <li className={styles["header-li"]}>Home</li>
         </a>
@@ -19,7 +23,7 @@ const Header = () => {
         <a href="#contact">
           <li className={styles["header-li"]}>Contact</li>
         </a>
-      </ul>
+      </ul> */}
     </div>
   );
 };

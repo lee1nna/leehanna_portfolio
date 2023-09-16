@@ -1,4 +1,7 @@
 .project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: url('/public/aeurel.png');
   background-size: cover;
   background-position: 50% 80%;
@@ -62,12 +65,12 @@
 
 .project-wrapper {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 600px;
   padding: 20px 20px 45px 20px;
   /* background-color: rgba(85, 164, 221, 0.8); */
   background: radial-gradient(rgba(85, 164, 221, 0.8),#47b8e8);
-  animation: appear 2s ease-out;
+  animation: appear 1s ease-out;
   border-radius: 10px;
   display: flex;
   align-items: center;

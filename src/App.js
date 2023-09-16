@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Wrapper>
         <Home />
-        <Skills />
-        <Project />
+        {/* <Skills />
+        <Project /> */}
       </Wrapper>
     </div>
   );

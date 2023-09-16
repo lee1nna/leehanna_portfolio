@@ -1,0 +1,50 @@
+.project-img {
+  max-width: 400px;
+  width: 90%;
+}
+
+.project-info {
+  margin-top: 10px;
+  padding: 0 25px;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skill-tags {
+  margin-top: 5px;
+  display: flex;
+}
+
+.skill-tag {
+  font-size: 16px;
+  background: radial-gradient(rgb(101, 201, 223), rgb(83, 163, 214));
+  border: 1px solid rgb(81, 144, 188);
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 4px;
+}
+
+.project-period {
+    font-size: 18px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.project-ul {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(224, 138, 0);
+    padding: 0;
+}
+
+.project-li {
+    position: relative;
+    color: #333;
+    left: 20px;
+    margin-top: 8px;
+}

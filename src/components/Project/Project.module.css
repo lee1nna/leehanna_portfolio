@@ -1,0 +1,228 @@
+.project {
+  background: url('/public/aeurel.png');
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 68px);
+  width: 100%;
+}
+
+.bulb {
+  bottom: 100%;
+  left: 50%;
+  min-width: 60px !important;
+  height: auto;
+  position: absolute;
+}
+
+.npc-wrapper {
+  max-width: 15%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:63%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.npc-wrapper > .npc {
+  max-width: 106px;
+  min-width: 106px;
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+}
+
+.disappear-npc {
+  animation: disappear 0.5s ease-out;
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.project-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 20px 20px 45px 20px;
+  /* background-color: rgba(85, 164, 221, 0.8); */
+  background: radial-gradient(rgba(85, 164, 221, 0.8),#47b8e8);
+  animation: appear 2s ease-out;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.project-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  border-radius: 4px;
+  padding: 10px;
+  border: 2px solid rgb(215, 215, 215);
+}
+
+@media (max-width: 760px) {
+  .project-box {
+    flex-direction: column;
+  }
+  .project-content {
+    width: 100% !important;
+  }
+  .project-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .project-img > img {
+    width: auto !important;
+  }
+}
+
+.project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  border-radius: 4px;
+  padding: 30px;
+  margin-right: 7px;
+  border-right: 1px solid rgb(217, 217, 217);
+  box-shadow: 5px 5px 5px 0px #d8d8d8;
+}
+
+.name {
+  width: 130px;
+  margin-top: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+}
+
+.name > span {
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 4px;
+  background: radial-gradient(rgb(121,121,121),rgb(133, 133, 133));
+}
+
+.project-img > img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: fill;
+}
+
+.project-content {
+  width: 70%;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 30px;
+}
+
+.click-me__txt {
+  position: absolute;
+  bottom: 100%;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: -2px 0px orange, 0px 2px orange,
+  1px 0px orange, 0px -2px orange;
+  margin-bottom: 10px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.project-content__title {
+  text-align: left;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: -2px 0px rgb(255, 0, 0), 0px 2px rgb(255, 0, 0),
+    1px 0px rgb(255, 0, 0), 0px -2px rgb(255, 0, 0);
+}
+
+.project-content__ul {
+  list-style: none;
+  text-align: left;
+}
+
+.project-content__li {
+  font-size: 24px;
+  /* cursor: pointer; */
+  color: rgb(90, 65, 138);
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.project-content__li:hover {
+  border-bottom: 3px dotted #7d7d7d;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.prev-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* cursor: pointer; */
+  font-size: 18px;
+  bottom: 8px;
+  height: 30px;
+  width: 80px;
+  background: radial-gradient(rgb(208, 255, 19),#95d84d);
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgb(94, 153, 127);
+  text-shadow: -2px 0px rgb(94, 153, 127), 0px 2px rgb(94, 153, 127),
+    1px 0px rgb(94, 153, 127), 0px -2px rgb(94, 153, 127);
+}
+
+.prev-btn:hover {
+  background: radial-gradient(rgb(208, 255, 19),#7daa4e);
+}
+
+.prev-btn > img {
+  margin-right: 8px;
+  width: 10px;
+  height: 10px;
+  filter: opacity(0.8) drop-shadow(0 0 0 rgb(94, 153, 127));
+}

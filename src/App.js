@@ -9,7 +9,7 @@ import Project from "./components/Project/Project";
 function App() {
   return (
     <div className="App" style={{cursor: 'url(cursor.png), auto'}}>
-      <Header />
+      {/* <Header /> */}
       <Wrapper>
         <Home />
         {/* <Skills />

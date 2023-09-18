@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Home.module.css";
 import DetailProject from "../Project/DetailProject";
+import TutorialPopup from "../TutorialPopup/TutorialPopup";
 
 const PROJECTS = [
   {
@@ -34,6 +35,8 @@ const PROJECTS = [
 ];
 
 const Home = () => {
+  const [tutorialPopupOn, setTutorialPopupOn] = useState(false);
+
   const [selectedNpc, setSelectedNpc] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoverNpc, setHoverNpc] = useState(false);
@@ -48,9 +51,10 @@ const Home = () => {
 
   return (
     <div id="project" className={styles.project}>
-      {/* <img className={styles.maple} src="maple-logo.png" alt="" />
-      <div className={styles.title1}>Leehanna</div>
-      <div className={styles.title2}>Portfolio</div> */}
+    {tutorialPopupOn && <TutorialPopup setTutorialPopupOn={setTutorialPopupOn}></TutorialPopup>}
+      <div className={styles.circle}></div>
+      <div className={styles.text1}>LEEHANNA</div>
+      <div className={styles.text2}>PORTFOLIO</div>
       {/* npc 영역 */}
       {
         <div
@@ -78,10 +82,11 @@ const Home = () => {
               setHoverNpc(false);
             }}
             onClick={() => {
-              setSelectedThing("npc");
-              setTimeout(() => {
-                npcRef.current.style.display = "none";
-              }, 500);
+                setTutorialPopupOn(true)
+            //   setSelectedThing("npc");
+            //   setTimeout(() => {
+            //     npcRef.current.style.display = "none";
+            //   }, 500);
             }}
             src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
             alt=""
@@ -92,7 +97,7 @@ const Home = () => {
         </div>
       }
 
-      <div className={styles.icons}>
+      {/* <div className={styles.icons}>
         <img
           onClick={() => {
             setSelectedThing("project");
@@ -125,7 +130,7 @@ const Home = () => {
           src="https://lee1nna.github.io/leehanna_portfolio/contact-removebg-preview.png"
           alt=""
         />
-      </div>
+      </div> */}
 
       {/* npc 선택 시 */}
       {selectedThing === "npc" && (

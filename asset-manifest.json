@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/leehanna_portfolio/static/css/main.a67d5e58.css",
-    "main.js": "/leehanna_portfolio/static/js/main.1532207f.js",
+    "main.css": "/leehanna_portfolio/static/css/main.e98c6b91.css",
+    "main.js": "/leehanna_portfolio/static/js/main.77c6b81e.js",
     "static/js/787.473b9bc8.chunk.js": "/leehanna_portfolio/static/js/787.473b9bc8.chunk.js",
-    "static/media/Stylish-Regular.ttf": "/leehanna_portfolio/static/media/Stylish-Regular.3e7f3690cc70545d6f89.ttf",
     "static/media/aeurel.png": "/leehanna_portfolio/static/media/aeurel.69be1396f9465cde6d49.png",
+    "static/media/BlackHanSans-Regular.ttf": "/leehanna_portfolio/static/media/BlackHanSans-Regular.f4f89062321390018f92.ttf",
     "static/media/logo.svg": "/leehanna_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/leehanna_portfolio/index.html",
-    "main.a67d5e58.css.map": "/leehanna_portfolio/static/css/main.a67d5e58.css.map",
-    "main.1532207f.js.map": "/leehanna_portfolio/static/js/main.1532207f.js.map",
+    "main.e98c6b91.css.map": "/leehanna_portfolio/static/css/main.e98c6b91.css.map",
+    "main.77c6b81e.js.map": "/leehanna_portfolio/static/js/main.77c6b81e.js.map",
     "787.473b9bc8.chunk.js.map": "/leehanna_portfolio/static/js/787.473b9bc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a67d5e58.css",
-    "static/js/main.1532207f.js"
+    "static/css/main.e98c6b91.css",
+    "static/js/main.77c6b81e.js"
   ]
 }

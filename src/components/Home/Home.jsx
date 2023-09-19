@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Home.module.css";
 import DetailProject from "../Project/DetailProject";
-import TutorialPopup from "../TutorialPopup/TutorialPopup";
+import TutorialPopup from "../Popup/TutorialPopup";
+import ContentPopup from "../Popup/ContentPopup";
 
 const PROJECTS = [
   {
@@ -36,6 +37,7 @@ const PROJECTS = [
 
 const Home = () => {
   const [tutorialPopupOn, setTutorialPopupOn] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('')
 
   const [selectedNpc, setSelectedNpc] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -51,7 +53,7 @@ const Home = () => {
 
   return (
     <div id="project" className={styles.project}>
-    {tutorialPopupOn && <TutorialPopup setTutorialPopupOn={setTutorialPopupOn}></TutorialPopup>}
+    {tutorialPopupOn && <TutorialPopup setTutorialPopupOn={setTutorialPopupOn} setSelectedCategory={setSelectedCategory}></TutorialPopup>}
       <div className={styles.circle}></div>
       <div className={styles.text1}>LEEHANNA</div>
       <div className={styles.text2}>PORTFOLIO</div>
@@ -83,10 +85,6 @@ const Home = () => {
             }}
             onClick={() => {
                 setTutorialPopupOn(true)
-            //   setSelectedThing("npc");
-            //   setTimeout(() => {
-            //     npcRef.current.style.display = "none";
-            //   }, 500);
             }}
             src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
             alt=""
@@ -133,7 +131,7 @@ const Home = () => {
       </div> */}
 
       {/* npc 선택 시 */}
-      {selectedThing === "npc" && (
+      {/* {selectedCategory === "aboutMe" && (
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
@@ -151,13 +149,13 @@ const Home = () => {
                   👩🏻‍💻 About Me
                 </div>
                 <div className="flex-center flex-column mg-top-20">
-                  {/* <div className="text-center">경험을 통해 얻어진 지식의 가치를 아는 <br/>
-                   프론트엔드 개발자 이한나 입니다.</div> */}
-                  {/* <img
+                  <div className="text-center">경험을 통해 얻어진 지식의 가치를 아는 <br/>
+                   프론트엔드 개발자 이한나 입니다.</div>
+                  <img
                     className={styles["aboutme-profile"]}
                     src="profile.jpg"
                     alt=""
-                  /> */}
+                  />
                   <div className="text-left">
                     경험을 통해 얻어진 지식의 가치를 아는 <br />
                     프론트엔드 개발자 이한나 입니다. 사용자 경험을 최우선으로
@@ -188,10 +186,10 @@ const Home = () => {
             </div>
           )}
         </div>
-      )}
+      )} */}
 
       {/* project 선택 시 */}
-      {selectedThing === "project" && (
+      {/* {selectedCategory === "project" && (
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
@@ -251,10 +249,10 @@ const Home = () => {
             </div>
           )}
         </div>
-      )}
+      )} */}
 
       {/* work 선택 시 */}
-      {selectedThing === "work" && (
+      {/* {selectedThing === "work" && (
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
@@ -303,10 +301,10 @@ const Home = () => {
             </div>
           )}
         </div>
-      )}
+      )} */}
 
       {/* contact 선택 시 */}
-      {selectedThing === "contact" && (
+      {/* {selectedThing === "contact" && (
         <div className={`${styles["project-wrapper"]}`}>
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
@@ -369,7 +367,7 @@ const Home = () => {
             </div>
           )}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

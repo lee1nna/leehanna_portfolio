@@ -8,7 +8,7 @@ import Project from "./components/Project/Project";
 
 function App() {
   return (
-    <div className="App" style={{cursor: 'url(cursor.png), auto'}}>
+    <div className="App" style={{cursor: `url('${process.env.PUBLIC_URL}/cursor.png'), auto`}}>
       {/* <Header /> */}
       <Wrapper>
         <Home />

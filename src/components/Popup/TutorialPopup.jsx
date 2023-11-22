@@ -1,6 +1,6 @@
 import styles from "./TutorialPopup.module.css";
 import npc from "../../assets/npc3.png";
-import ContentPopup from "./ContentPopup";
+import ContentPopupWrap from "./ContentPopupWrap";
 import { useState } from "react";
 
 const TutorialPopup = (props) => {
@@ -15,7 +15,7 @@ const TutorialPopup = (props) => {
   return (
     <div className={styles["tutorial-popup"]}>
       {contentPopupOn && (
-        <ContentPopup
+        <ContentPopupWrap
           setContentPopupOn={setContentPopupOn}
           category={selectedCategory}
         />

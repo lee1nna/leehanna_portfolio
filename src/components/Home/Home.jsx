@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Home.module.css";
 import DetailProject from "../Project/DetailProject";
 import TutorialPopup from "../Popup/TutorialPopup";
-import ContentPopup from "../Popup/ContentPopup";
+import ContentPopup from "../Popup/ContentPopupWrap";
 
 const PROJECTS = [
   {
@@ -68,7 +68,7 @@ const Home = () => {
           {hoverNpc && (
             <img
               className={styles.bulb}
-              src="https://lee1nna.github.io/leehanna_portfolio/bulb.png"
+              src={`${process.env.PUBLIC_URL}/bulb.png`}
               alt=""
             />
           )}
@@ -86,7 +86,7 @@ const Home = () => {
             onClick={() => {
                 setTutorialPopupOn(true)
             }}
-            src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
+            src={`${process.env.PUBLIC_URL}/my-npc2.png`}
             alt=""
           />
           <div className={styles.name}>

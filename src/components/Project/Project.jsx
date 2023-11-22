@@ -51,7 +51,7 @@ const Project = () => {
           {hoverNpc && (
             <img
               className={styles.bulb}
-              src="https://lee1nna.github.io/leehanna_portfolio/bulb.png"
+              src={`${process.env.PUBLIC_URL}/bulb.png`}
               alt=""
             />
           )}
@@ -72,7 +72,7 @@ const Project = () => {
                 npcRef.current.style.display = "none";
               }, 500);
             }}
-            src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
+            src={`${process.env.PUBLIC_URL}/my-npc2.png`}
             alt=""
           />
           <div className={styles.name}>
@@ -85,7 +85,7 @@ const Project = () => {
           <div className={styles["project-box"]}>
             <div className={styles["project-img"]}>
               <img
-                src="https://lee1nna.github.io/leehanna_portfolio/my-npc2.png"
+                src={`${process.env.PUBLIC_URL}/my-npc2.png`}
                 alt=""
               />
               <div className={styles.name}>
@@ -109,7 +109,7 @@ const Project = () => {
                       >
                         <img
                           className={styles.arrow}
-                          src="https://lee1nna.github.io/leehanna_portfolio/arrow.png"
+                          src={`${process.env.PUBLIC_URL}/arrow.png`}
                           alt=""
                         />
                         {project.title}
@@ -133,7 +133,7 @@ const Project = () => {
               }}
             >
               <img
-                src="https://lee1nna.github.io/leehanna_portfolio/pixel-arrow.png"
+                src={`${process.env.PUBLIC_URL}/pixel-arrow.png`}
                 alt=""
               />
               <div>이전</div>

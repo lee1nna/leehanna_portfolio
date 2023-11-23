@@ -1,17 +1,25 @@
 @font-face {
   font-family: "maple";
-  src: url("../public/font/BlackHanSans-Regular.ttf");
+  src: url("../public/font/neodgm.woff");
+}
+
+* {
+  font-family: maple;
 }
 
 html {
-    background-image: linear-gradient(to bottom, rgb(248, 222, 81), rgb(226, 145, 52));
-    overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(248, 222, 81),
+    rgb(226, 145, 52)
+  );
+  overflow: hidden;
 }
 
 .big-maple {
-    position: absolute;
-    top: calc(50% - 350px);
-    left: calc(50% - 350px);
+  position: absolute;
+  top: calc(50% - 350px);
+  left: calc(50% - 350px);
   filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(81deg) brightness(1000%)
     contrast(107%);
   width: 600px;

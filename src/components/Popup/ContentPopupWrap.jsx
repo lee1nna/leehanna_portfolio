@@ -1,22 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./ContentPopupWrap.module.css";
 import ProjectPopup from "./ProjectPopup";
+import { type } from "@testing-library/user-event/dist/type";
 
 const PROJECTS = [
   {
-    id: 1,
+    id: 0,
     title: "CCTV 관제 페이지",
   },
   {
-    id: 2,
+    id: 1,
     title: "어드민 스타터 템플릿",
   },
   {
-    id: 3,
+    id: 2,
     title: "공통컴포넌트 및 가이드 페이지",
   },
   {
-    id: 1,
+    id: 3,
     title: "설문 관리 어드민 및 온라인 설문 서비스",
   },
   {
@@ -33,11 +34,40 @@ const PROJECTS = [
   },
 ];
 
+const introduceText = '안녕하세요.경험을 통해 얻어진 지식의 가치를 아는 개발자 이한나입니다. 사용자 경험을 중심으로 하는 개발자로서 단순히 디자인을 구현하는 것 이상의 역할을 수행하고자 노력합니다.'
+
 const ContentPopupWrap = (props) => {
   const [selectedProject, setSelectedProject] = useState("");
+  const [introText, setIntroText] = useState("")
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    const typingInterval = setInterval(() => {
+      let stop = false
+      setIntroText((prevIntroText) => {
+        let resultText
+
+        if(!stop) {
+          resultText = prevIntroText ? prevIntroText + introduceText[count] : introduceText[0]
+          setCount(count+1)
+        }
+        
+        if(count >= introduceText.length) {
+          setIntroText(prevIntroText)
+          stop = true
+        }
+
+        return resultText
+      })
+    }, 50)
+
+    return () => {
+      clearInterval(typingInterval)
+    }
+  })
 
   const getContentByCategory = (category) => {
-    // skills 카테고리
+    // project 카테고리
     if (category === "project") {
       return (
         <div className={styles["project-content"]}>
@@ -78,6 +108,18 @@ const ContentPopupWrap = (props) => {
           </ul>
         </div>
       );
+    } else if (category === "aboutMe") {
+      return (
+        <div className={styles["project-content"]}>
+          <div className={styles["project-content__title"]}>📍 개발자 모험가</div>
+          <div style={{ margin: "10px 0" }}>
+           
+          </div>
+          <div className={styles['intro-text']}>
+            {introText}
+          </div>
+        </div>
+      );
     }
   };
 
@@ -113,7 +155,10 @@ const ContentPopupWrap = (props) => {
       </div>
 
       {selectedProject !== "" && (
-        <ProjectPopup projectId={selectedProject}></ProjectPopup>
+        <ProjectPopup
+          projectId={selectedProject}
+          close={setSelectedProject}
+        ></ProjectPopup>
       )}
     </div>
   );

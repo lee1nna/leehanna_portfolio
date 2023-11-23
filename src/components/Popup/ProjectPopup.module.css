@@ -73,11 +73,15 @@
     height: 20px;
     right: 10px;
     top: 10px;
-    background-color: rgb(176, 223, 73);
+    background-color: rgb(149, 189, 62);
     padding: 5px 0;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 4px;
+}
+
+.project-cancle-btn:hover {
+    background-color: rgb(128, 161, 58);
 }
 
 .circle {

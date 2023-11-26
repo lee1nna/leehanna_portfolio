@@ -16,6 +16,10 @@ html {
   overflow: hidden;
 }
 
+html:active {
+  cursor: url('/public/green-arrow.png');
+}
+
 .big-maple {
   position: absolute;
   top: calc(50% - 350px);

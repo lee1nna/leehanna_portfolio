@@ -10,26 +10,30 @@ const PROJECTS = [
   },
   {
     id: 1,
-    title: "어드민 스타터 템플릿",
+    title: "중소기업 밀집지역 현황 모니터링 시스템",
   },
   {
     id: 2,
-    title: "공통컴포넌트 및 가이드 페이지",
+    title: "에코맵",
   },
   {
     id: 3,
-    title: "설문 관리 어드민 및 온라인 설문 서비스",
+    title: "어드민 스타터 + 공통 컴포넌트 및 가이드 페이지",
   },
   {
     id: 4,
-    title: "뮤직클라우드",
+    title: "설문 관리 어드민 및 온라인 설문 서비스",
   },
   {
     id: 5,
-    title: "공무원연금공단 신원인증 모바일 플랫폼",
+    title: "뮤직클라우드",
   },
   {
     id: 6,
+    title: "공무원연금공단 신원인증 모바일 플랫폼",
+  },
+  {
+    id: 7,
     title: "소상공인을 위한 간편 키오스크 설치 서비스",
   },
 ];
@@ -40,6 +44,7 @@ const ContentPopupWrap = (props) => {
   const [selectedProject, setSelectedProject] = useState("");
   const [introText, setIntroText] = useState("")
   const [count, setCount] = useState(0)
+  const [time, setTime] = useState(50)
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -59,12 +64,17 @@ const ContentPopupWrap = (props) => {
 
         return resultText
       })
-    }, 50)
+    }, time)
 
     return () => {
       clearInterval(typingInterval)
     }
-  })
+  },[introText])
+
+  const handlerClickContent = () => {
+    console.log('click!');
+    setTime(20)
+  }
 
   const getContentByCategory = (category) => {
     // project 카테고리
@@ -110,8 +120,8 @@ const ContentPopupWrap = (props) => {
       );
     } else if (category === "aboutMe") {
       return (
-        <div className={styles["project-content"]}>
-          <div className={styles["project-content__title"]}>📍 개발자 모험가</div>
+        <div className={styles["project-content"]} onClick={handlerClickContent}>
+          <div className={styles["project-content__title"]}>📍 About Me</div>
           <div style={{ margin: "10px 0" }}>
            
           </div>

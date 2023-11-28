@@ -75,6 +75,24 @@ const ProjectPopup = (props) => {
       detailDesc:
         "• Firebase를 연동해 Firebase Storage에 저장된 컨텐츠 이미지 및 영상 조회 기능 개발 <br/> • Timestamp를 사용해 만료 시간이 있는 웹 링크를 개발",
     },
+    {
+      title: "웹툰 추천 서비스 - 툰툰이",
+      period: "2020.03 ~ 2020.11",
+      skills: "Python, Flask, HTML5, CSS3",
+      shortDesc: "개인화 요소를 이용해 웹툰을 추천해주는 서비스",
+      src: "toontooni.png",
+      detailDesc:
+        "대학교 졸업작품으로 진행한 프로젝트입니다. <br/> UBCF 추천 로직을 직접 구현하였습니다.<br/> 사용자의 성별, 나이, 직업, 선호 웹툰 3가지와 그에 따른 평점을 입력하면 <br/> 나와 유사한 사용자가 선호하는 웹툰을 추천해 줄 수 있습니다.",
+    },
+    {
+      title: "Iterview",
+      period: "2021.06 ~ 2021.08",
+      skills: "React, Javascript, Axios, HTML5, CSS3",
+      shortDesc: "개발자 취업준비생을 위한 기술 면접 공유 서비스",
+      src: "dnd_iterview.png",
+      detailDesc:
+        "DND라는 대외활동에 참여하여 진행한 프로젝트입니다. <br/>백엔드 개발자와 디자이너분과 처음으로 협업을 했던 프로젝트입니다. <br/>소셜 로그인, 퀴즈기능 등을 구현하였습니다, <br/> Github를 사용해 효율적으로 협업하는 방식에 대해서도 배웠습니다.",
+    },
   ];
 
   const selectedProject = (id) => {

@@ -33,6 +33,17 @@ const PROJECTS = [
   },
 ];
 
+const EXPERIENCES = [
+  {
+    id: 7,
+    title: "툰툰이",
+  },
+    {
+    id: 8,
+    title: "잇터뷰",
+  },
+]
+
 const Project = () => {
   const [selectedNpc, setSelectedNpc] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);

@@ -38,6 +38,17 @@ const PROJECTS = [
   },
 ];
 
+const EXPERIENCES = [
+  {
+    id: 8,
+    title: "툰툰이",
+  },
+    {
+    id: 9,
+    title: "잇터뷰",
+  },
+]
+
 const introduceText =
   "안녕하세요.경험을 통해 얻어진 지식의 가치를 아는 개발자 이한나입니다. \n 사용자 경험을 중심으로 하는 개발자로서 단순히 디자인을 구현하는 것 \n 이상의 역할을 수행하고자 노력합니다.";
 
@@ -91,10 +102,34 @@ const ContentPopupWrap = (props) => {
       return (
         <div className={styles["project-content"]}>
           <div className={styles["project-content__title"]}>
-            📍 수행한 프로젝트
+            📍 Work Experience
           </div>
           <ul className={styles["project-content__ul"]}>
             {PROJECTS.map((project, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className={styles["project-content__li"]}
+                  onClick={() => {
+                    setSelectedProject(project.id);
+                  }}
+                >
+                  <img
+                    className={styles.arrow}
+                    src={`${process.env.PUBLIC_URL}/arrow.png`}
+                    alt=""
+                  />
+                  {project.title}
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className={styles["project-content__title"]}>
+            📍 Personal Experience
+          </div>
+          <ul className={styles["project-content__ul"]}>
+            {EXPERIENCES.map((project, idx) => {
               return (
                 <li
                   key={idx}

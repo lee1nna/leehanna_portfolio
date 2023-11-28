@@ -20,7 +20,7 @@ function App() {
   }
   
   return (
-    <div className="App" style={{cursor: cursorStyle}} onMouseDown={handleMounseDown} onMouseUp={handleMounseUp}>
+    <div className="App" style={{cursor: cursorStyle}}>
       {/* <Header /> */}
       <Wrapper>
         <Home />

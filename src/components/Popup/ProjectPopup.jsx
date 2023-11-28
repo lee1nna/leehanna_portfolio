@@ -31,10 +31,10 @@ const ProjectPopup = (props) => {
         "• 주변 카페 지도 검색 기능 개선 <br/> • 기존 UI/UX 개선 및 이슈사항 수정<br/> • 빠른 어플리케이션 배포를 위해 Codepush 도입",
     },
     {
-      title: "어드민 스타터 + 사내 공통 컴포넌트",
+      title: "어드민 스타터 + 공통 컴포넌트 및 가이드 페이지",
       period: "2022.01 ~ 진행중",
       skills: "Nuxt, Typescript, Axios, HTML5, CSS3",
-      shortDesc: "최대 9개의 CCTV를 실시간으로 관제하는 웹페이지",
+      shortDesc: "사내 공통 UI 컴포넌트 개발 및 가이드 페이지 개발",
       src: "guide_project.png",
       detailDesc:
         "• 어드민 페이지의 빠른 개발을 위해 주요 기능 모듈화 <br/> • 어드민 페이지 내에서 사용되는 공통 컴포넌트 개발 <br/> • 기존 스타터와 공통 컴포넌트 리라이팅 진행 <br/> • 회사 내부 기술 스택 변경으로 인해 Next 점진적 도입 <br/>",

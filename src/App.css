@@ -57,6 +57,10 @@ html:active {
   justify-content: center;
 }
 
+.mg-left-15 {
+  margin-left: 15px;
+}
+
 .mg-top-10 {
   margin-top: 10px;
 }
@@ -83,4 +87,8 @@ html:active {
 
 .bold {
   font-weight: 700;
+}
+
+.ft_red {
+  color: rgb(219, 67, 67);
 }

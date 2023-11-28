@@ -21,8 +21,8 @@
     width: 80%;
     height: 600px;
     padding: 20px 20px 45px 20px;
-    /* background-color: rgba(85, 164, 221, 0.8); */
-    background: radial-gradient(rgba(85, 164, 221, 0.8),#47b8e8);
+    background: radial-gradient(rgba(85, 164, 221, 0.3),#47b8e8);
+    border: 1px solid #fff;
     animation: appear 1s ease-out;
     border-radius: 10px;
     display: flex;
@@ -194,6 +194,97 @@
   }
 
   .intro-text {
+    line-height: 30px;
+    color: #7a7a7a;
+  }
+
+  .pixel-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .me-info {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .me-info > div,a {
+    margin-top: 15px;
+    color: #333;
+  }
+
+  .skiils {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-wrap {
+    border: 1px solid #969696;
+    border-radius: 10px;
+    width: 33%;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .skills-wrap:first-child {
+    margin-left: 10px;
+  }
+
+  .skill-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0 ;
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(91,147,194), rgb(54, 106, 155))
+  }
+
+  .skill-body {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .skill {
+    display: flex;
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 0px #d8d8d8;
+    background: #fff;
+  }
+
+  .skill > img {
+    padding: 4px;
+    min-width: 50px;
+    height: 50px;
+    object-fit: fill;
+    /* height: auto; */
+    border: 1px solid #333;
+    border-radius: 4px;
+  }
+
+  .skill > div {
+    border: 1px solid rgb(162,162,162);
+    background-image: linear-gradient(to top, rgb(214, 214, 214), rgb(236, 236, 236));
+    width: 100%;
+    padding: 5px 0 0 5px;
+  }
+
+  .career-wrap {
+    background: #fff;
+    padding: 20px;
+  }
+
+  .company-desc {
+    margin-top: 25px;
     line-height: 30px;
     color: #7a7a7a;
   }

@@ -33,9 +33,9 @@ const TutorialPopup = (props) => {
           보고싶은 카테고리를 선택해주세요.
           <ul className={styles.category}>
             <li onClick={() => {selectContentCategory("aboutMe")}}>About Me</li>
-            <li onClick={() => {selectContentCategory("skills")}}>Skills</li>
+            <li onClick={() => {selectContentCategory("career")}}>Career</li>
             <li onClick={() => {selectContentCategory("project")}}>Project</li>
-            <li onClick={() => {selectContentCategory("contact")}}>Contact</li>
+            <li onClick={() => {selectContentCategory("skills")}}>Skills</li>
           </ul>
         </div>
       </div>
